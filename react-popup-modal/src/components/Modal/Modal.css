@@ -1,0 +1,53 @@
+.modal-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 99998;
+}
+
+.modal-wrapper {
+  position: fixed;
+  max-width: 500px;
+  padding: 8px 12px;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: azure;
+  box-shadow: 0.5px 0.5px 1px 1px rgba(0, 0, 0, 0.3);
+  z-index: 99999;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translate(-50%, -200%);
+  }
+  to {
+    transform: translate(-50%, -50%);
+  }
+}
+
+.modal-wrapper.active {
+  animation-name: slide-in;
+  animation-duration: 0.9s;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.close-btn {
+  width: 30px;
+  height: 30px;
+  background-color: lightcoral;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  border: none;
+}
