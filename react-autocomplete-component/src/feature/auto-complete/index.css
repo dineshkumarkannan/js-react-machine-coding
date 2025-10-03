@@ -1,0 +1,18 @@
+.autocomplete-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.autocomplete-wrapper label {
+  color: rgb(86, 86, 86);
+}
+.autocomplete-wrapper input {
+  max-width: 100%;
+  width: 100%;
+  padding: 8px 5px;
+  border: 2px solid gainsboro;
+}
+.autocomplete-wrapper input::placeholder {
+  color: rgb(155, 155, 156);
+}
