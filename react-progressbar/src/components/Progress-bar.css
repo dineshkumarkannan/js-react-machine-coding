@@ -1,0 +1,22 @@
+.outer {
+  width: 100%;
+  height: 24px;
+  background: #eee;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.inner {
+  height: 100%;
+  width: 100%;
+  color: black;
+  background: lightsalmon;
+  transform: translateX(-100%);
+  transition: transform 5s linear;
+}
+
+.progress-text {
+  text-align: right;
+  margin-right: 6px;
+  line-height: 1.5rem;
+}
